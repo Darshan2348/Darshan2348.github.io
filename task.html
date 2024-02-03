@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        background-color: #ffffff;
+      }
+      .navbar-brand img {
+        max-width: 100px;
+        height: auto;
+      }
+      .navbar-nav .nav-link {
+        margin-right: 15px;
+      }
+      .header-content {
+  padding: 50px 0;
+  text-align: left; /* Align text to the left */
+}
+
+.header-content h1 {
+  font-size: 48px; /* Adjust font size */
+  color: #333; /* Adjust font color */
+  margin-bottom: 30px;
+}
+
+.header-content p {
+  font-size: 20px; /* Adjust font size */
+  color: #666; /* Adjust font color */
+  margin-bottom: 40px;
+}
+
+.btn-send-message {
+  background-color: #ffc107; /* Match the design color */
+  color: #fff; /* Text color */
+  padding: 15px 30px; /* Adjust padding */
+  font-size: 18px; /* Adjust font size */
+  border-radius: 0; /* Remove border radius */
+  text-transform: uppercase; /* Uppercase text */
+  font-weight: bold; /* Bold text */
+  border: none;
+  cursor: pointer;
+}
+      .image-container {
+        text-align: center;
+        margin-top: 50px; /* Add margin to separate from the header content */
+      }
+      .image-container img {
+        max-width: 100%;
+        height: auto;
+      }
+      .yellow-box {
+        background-color: yellow;
+        padding: 10px;
+        width: 100%; /* Make width same as image */
+        display: inline-block; /* Display inline with image */
+      }
+      .yellow-box h3 {
+        margin-bottom: 10px;
+      }
+      .btn-show-me-more {
+        background-color: #ffc107;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Logos */
+      .logo {
+        max-width: 100px; /* Adjust the size as needed */
+        margin: 0 10px; /* Add spacing between logos */
+      }
+      .footer {
+        background-color: black;
+        color: white;
+        padding: 10px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+      }
+
+        .footer p {
+            margin-bottom: 0;
+            display: inline;
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="Main-Logo.png" alt="Main Logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header Content -->
+    <div class="header-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Hello!!! We Are Creative Digital Agency</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <button class="btn btn-send-message">Send Message</button>
+          </div>
+          <div class="col-md-6 image-container">
+            <img src="Image-1.png" alt="Image 1" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Showcase -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="yellow-box">
+            <h3>ARTWORK</h3>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <img src="Image-6.jpg" alt="Image 6" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="Image-3.jpg" alt="Image 3" class="img-fluid" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="Image-2.jpg" alt="Image 2" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="Image-5.jpg" alt="Image 5" class="img-fluid" />
+        </div>
+        <div class="col-md-4">
+          <img src="Image-4.jpg" alt="Image 4" class="img-fluid" />
+        </div>
+      </div>
+      <!-- Small yellow box with button -->
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          
+            <button class="btn-show-me-more">SHOW ME MORE</button>
+          </div>
+        </div>
+      </div>
+      <!-- Logos -->
+      <div class="row mt-4">
+        <div class="col-md-12 text-center">
+          <img src="Logo-1.png" alt="Logo 1" class="img-fluid logo" />
+          <img src="Logo-2.png" alt="Logo 2" class="img-fluid logo" />
+          <img src="Logo-3.png" alt="Logo 3" class="img-fluid logo" />
+          <img src="Logo-4.png" alt="Logo 4" class="img-fluid logo" />
+          <img src="Logo-5.png" alt="Logo 5" class="img-fluid logo" />
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 text-center">
+            <img src="Image-7.jpg" alt="Image 7" class="img-fluid" />
+            <div class="yellow-box">
+              <h3>Luke Seawalker</h3>
+            </div>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="Image-8.jpg" alt="Image 8" class="img-fluid" />
+            <div class="yellow-box">
+              <h3>Luke Seawalker</h3>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-12 text-center">
+            <h4>Little About us</h4>
+            <h5>orem ipsum dolor sit amet, consectetur adipiscing elit, sed do temp ut labore alique Read more</h5>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1>CONTACT US</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, ut labore et aliqua.</p>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <h4>Send us a Message</h4>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+              </div>
+              <button type="submit" class="btn btn-send-message">SEND MESSAGE</button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <img src="Image-9.jpg" alt="Image 9" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      
+      <!-- Social Media Logos -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <img src="Icon-1.png" alt="Facebook Logo" class="img-fluid">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="Icon-2.png" alt="Twitter Logo" class="img-fluid">
+          </div>
+          <div class="col-md-4 text-center">
+            <img src="Icon-3.png" alt="Website Logo" class="img-fluid">
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="container">
+            <p><img src="Main-Logo-Footer.png" alt="Main Logo Footer"> c 2020 - thewebpeople, All rights Reserved</p>
+        </div>
+    </div>
+
+    <!-- Back to Top -->
+    <div class="back-to-top">
+        <a href="#">Back to top</a>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
