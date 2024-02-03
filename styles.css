@@ -14,9 +14,9 @@ body {
 .navbar-text {
     width: 60%; /* Adjust width as needed */
     text-align: right; /* Align the text to the right */
-    margin-right: 20px; /* Add a margin to move the text slightly left */
-    word-spacing: 10px; /* Add space between words */
-    font-size: 14px; /* Adjust font size */
+    margin-right: 8px; /* Add a margin to move the text slightly left */
+    word-spacing: 15px; /* Add space between words */
+    font-size: 8px; /* Adjust font size */
     font-weight: bold; /* Make text bold */
 }
 
@@ -24,12 +24,15 @@ body {
     padding: 50px 0;
     text-align: left; /* Align text to the left */
 }
+/* Custom CSS Styles */
 
+/* Reduce line spacing and make text bold for <h1> elements */
 .header-content h1 {
-    font-size: 36px; /* Adjust font size */
-    color: #333; /* Adjust font color */
-    margin-bottom: 20px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Adjust as needed */
+    line-height: 0.7; /* Adjust line height for less spacing */
 }
+
 
 .header-content p {
     font-size: 15px; /* Adjust font size */
@@ -37,7 +40,7 @@ body {
     margin-bottom: 30px;
 }
 .img-small {
-    max-width: 180px; /* Adjust the max-width to make the image smaller */
+    max-width: 150px; /* Adjust the max-width to make the image smaller */
 }
 .paragraph-content {
     font-size: 16px;
@@ -49,6 +52,37 @@ body {
         font-size: 14px; /* Reduce font size for smaller devices */
     }
 }
+
+.right-bottom-image {
+    max-width: 100%; /* Adjust the maximum width as needed */
+    position: absolute;
+    bottom: 8px; /* Adjust the distance from the bottom */
+    right: 25px; /* Align to the right with some spacing */
+    max-height: 300px; /* Set a maximum height to avoid overflowing */
+}
+
+@media (max-width: 768px) {
+    .right-bottom-image {
+        position: relative;
+        max-width: 100%;
+        max-height: none; /* Reset max height for smaller screens */
+        bottom: 0; /* Reset bottom position */
+        right: auto; /* Reset right position */
+        margin-top: 20px; /* Adjust margin for spacing */
+    }
+
+    .header-content h1 {
+        font-size: 28px;
+    }
+    .header-content p {
+        font-size: 14px;
+    }
+    .btn-send-message {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
 
 .btn-send-message {
     background-color: #ffc107; /* Match the design color */
@@ -128,3 +162,4 @@ body {
         max-width: 60px;
     }
 }
+
